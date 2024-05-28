@@ -9,7 +9,7 @@ Em desenvolvimento
 - JavaScript
 - Java Web (Servlets e JSP)
 - NetBeans
-
+ 
 
 Página inicial com informações sobre os serviços oferecidos
 - Galeria de fotos dos eventos realizados
