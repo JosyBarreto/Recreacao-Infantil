@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Novo Cliente - Alegria Kids</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo0101.jpg" alt="Logo Alegria Kids">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li> 
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cliente.html">Clientes</a></li>
+         
+            </ul>
+        </nav>
+
+    </header>
+    <mai
+        <section class="novo-cliente">
+            <h1>Novo Cliente</h1>
+            <div id="clientDetails">
+                <form id="novo-cliente-form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+                    <butt
+                    <a href="excluir-cliente.html" class="btn-novo">Novo Cliente</a>
+                </form>
+            </div>
+        </section>
+   <a href="contato.html" class="btn">Voltar para Contato</a>
+    </main>
+    <footer>
+        <div class="social">
+           <a href="#"><img src="img/whatsapp.jpg" alt="Whatsapp"></a>
+           
+            <a href="#"><img src="img/icone face.jpg" alt="Facebook"></a>
+            <a href="#"><img src="img/stagram.jpg" alt="Istagram"></a>
+        
+        <p>&copy; 2024 Alegria Kids. Todos os direitos reservados.</p>
+    </footer>
+ <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const client = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                date: document.getElementById('date').value,
+                notes: document.getElementById('notes').value
+            };
+
+            let clients = JSON.parse(localStorage.getItem('clients')) || [];
+            clients.push(client);
+            localStorage.setItem('clients', JSON.stringify(clients));
+
+            alert('Cliente cadastrado com sucesso!');
+            window.location.href = 'cliente.html';
+        });
+    </script>
+</body>
+</html>

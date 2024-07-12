@@ -1,0 +1,1091 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #78b9d8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #76afd0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; 
+    max-width: 100%;
+    border-radius: 20%;
+    padding: 10px
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+    background: #0a0b0b;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #78b9d8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #76afd0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-intro h1 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 2em;
+}
+
+.galeria {
+    padding: 50px 20px;
+    text-align: center;
+    background: #7bc8e3;
+    margin-bottom: 20px;
+}
+
+.galeria h2 {
+    margin-bottom: 20px;
+    color: #e32727;
+    font-size: 1em;
+}
+
+.galeria-fotos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria-fotos img {
+    width: 30%;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.depoimentos {
+    padding: 50px 20px;
+    text-align: center;
+    background: #7bc8e3;
+    margin-bottom: 20px;
+}
+
+.depoimentos h2 {
+    margin-bottom: 20px;
+    color: #e32727;
+    font-size: 2.5em;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 200px;
+}
+
+.depoimento img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.depoimento p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+footer {
+    background-color:grey;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social img {
+    width: 50px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    
+}
+
+footer p {
+    margin-top: 10px;
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro, .galeria, .depoimentos {
+        padding: 20px;
+    }
+
+    .galeria-fotos img, .depoimento img {
+        width: 80%;
+    }
+}
+
+
+/*SOBRE*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #78b9d8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #76afd0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; 
+    max-width: 100%;
+    border-radius: 20%;
+    padding: 10px
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+    background: #0a0b0b;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #78b9d8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #76afd0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.about-intro h1 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 1.5em;
+}
+
+.galeria-videos, .servicos {
+    padding: 50px 20px;
+    text-align: center;
+    background: #7bc8e3;
+    margin-bottom: 20px;
+}
+
+.galeria-videos h2, .servicos h2 {
+    margin-bottom: 30px;
+    color: #e32727;
+    font-size: 2.5em;
+   
+  
+}
+
+.fotos, .videos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fotos img, .videos video {
+    width: 30%;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-intro, .galeria-videos, .servicos {
+        padding: 20px;
+    }
+
+    .fotos img, .videos video {
+        width: 80%;
+    }
+}
+        
+
+           /*SERVIÇOS*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #78b9d8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #76afd0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; 
+    max-width: 100%;
+    border-radius: 20%;
+    padding: 10px
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+    background: #0a0b0b;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #78b9d8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #76afd0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+.intro h3 {
+    margin: 20px 0;
+    font-size: 1em;
+    background: blue;
+}
+
+.servicos {
+    margin-bottom: 40px;
+    margin: 20px 0;
+    font-size: 1em;
+    
+}
+
+
+.servicos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.servicos li {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.fotos img {
+    width: calc(30.33% - 10px);
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 20px 20px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6f61, #d63b2d);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+}
+
+.btn {
+    padding: 20px 30px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6f61, #d63b2d);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #d63b2d, #ff6f61);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+li{
+ font-size:2em; 
+  text-align: center;  
+  color:blue;
+  margin: 0 10px;
+  
+}
+       
+
+.fotos.camarim img.camarim-img {
+    width: calc(30.33% - 10px);
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+.fotos.maquiagem {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.fotos.maquiagem img.maquiagem-img {
+    max-width: 200px; 
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.fotos.balao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.fotos.balao img.balao-img {
+    max-width: 200px; 
+    height: auto;
+    border-radius: 5px;
+    
+}
+.orcamento{
+font-size: 16px;
+text-align: center;
+}
+h1{
+font-size: 40px;
+text-align: center;    
+    
+}
+p{
+ font-size: 30px;
+text-align: center;   
+color:blue;
+}
+
+
+               /*CONTATO*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #78b9d8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #76afd0;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; 
+    max-width: 100%;
+    border-radius: 20%;
+    padding: 10px
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 10px 0;
+    background: #0a0b0b;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #78b9d8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #76afd0;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form-group {
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+     margin: 0px;
+}
+button {
+    width: auto; 
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+                                       /*CIENTE*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    min-width: 800px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 15%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 20%;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Centralizar o botão Novo Cliente */
+.centralizar-btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Flexbox para centralizar botões de ações */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+}
+            /*BOTÂO EXCLUIR*/
+            
+   .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}                             /*Novo-Cliente*/
+                                     
+   /* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.novo-cliente h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.novo-cliente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.novo-cliente label {
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.novo-cliente input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+.btn-novo {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 50px 50px;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+button[type="submit"]:hover,
+.btn-novo:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    margin: 0 20px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+         
+    
+}
+                              

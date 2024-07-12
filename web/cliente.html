@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clientes - Alegria Kids</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo0101.jpg" alt="Logo Alegria Kids">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cliente.html">Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Clientes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Data do Evento</th>
+                    <th>Observações</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="clientTableBody"></tbody>
+        </table>
+        <div class="button-container">
+            <a href="contato.html" class="btn centralizar-btn">Novo Cliente</a>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="img/whatsapp.jpg" alt="Whatsapp"></a>
+            <a href="#"><img src="img/icone face.jpg" alt="Facebook"></a>
+            <a href="#"><img src="img/stagram.jpg" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Alegria Kids. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const clientTableBody = document.getElementById('clientTableBody');
+            const clients = JSON.parse(localStorage.getItem('clients')) || [];
+
+            function carregarClientes() {
+                clientTableBody.innerHTML = '';
+
+                if (clients.length > 0) {
+                    clients.forEach((client, index) => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${client.name}</td>
+                            <td>${client.email}</td>
+                            <td>${client.phone}</td>
+                            <td>${client.date}</td>
+                            <td>${client.notes}</td>
+                            <td>
+                                <div class="flex-container">
+                                    <button class="btn" onclick="excluirCliente(${index})">Excluir</button>
+                                </div>
+                            </td>
+                        `;
+                        clientTableBody.appendChild(row);
+                    });
+                } else {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td colspan="6">Nenhum cliente cadastrado.</td>
+                    `;
+                    clientTableBody.appendChild(row);
+                }
+            }
+
+            carregarClientes();
+
+            window.excluirCliente = function(index) {
+                if (confirm(`Tem certeza de que deseja excluir o cliente ${clients[index].name}?`)) {
+                    clients.splice(index, 1);
+                    localStorage.setItem('clients', JSON.stringify(clients));
+                    alert("Cliente excluído com sucesso!");
+                    carregarClientes();
+                }
+            };
+        });
+    </script>
+</body>
+</html>
