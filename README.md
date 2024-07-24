@@ -9,6 +9,7 @@ Em desenvolvimento
 - JavaScript
 - Java Web (Servlets e JSP)
 - NetBeans
+- Mysql
  
 
 Página inicial com informações sobre os serviços oferecidos
@@ -16,3 +17,4 @@ Página inicial com informações sobre os serviços oferecidos
 - Formulário de contato para solicitar orçamentos
 - Validação de formulários com JavaScript
 - Estilização responsiva com CSS
+- Banco de dados
