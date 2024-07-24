@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Cliente - Alegria Kids</title>
+   <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo0101.jpg" alt="Logo Alegria Kids">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li> 
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cliente.html">Clientes</a></li>
+                 
+            </ul>
+        </nav>
+    </header>
+ <button type="submit">Excluir</button>
+ <button type="submit">Cancelar</button>
+    <main>
+        <section class="excluir-cliente">
+            <div class="btn-novo">
+            <h1>Excluir Cliente</h1>
+            <p>Tem certeza de que deseja excluir o cliente <span id="cliente-nome"></span>?</p>
+            <form id="excluir-form" action="clientes.html" method="POST">
+                <input type="hidden" id="id" name="id" value="1">
+                <input type="hidden" id="nome" name="nome" value="João da Silva"> <!-- Exemplo de nome -->
+                <button type="submit" onclick="return confirmarExclusao()">Excluir</button>
+                <button type="button" onclick="window.location.href='clientes.html'">Cancelar</button>
+            </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social">
+           <a href="#"><img src="img/whatsapp.jpg" alt="Whatsapp"></a>
+           
+            <a href="#"><img src="img/icone face.jpg" alt="Facebook"></a>
+            <a href="#"><img src="img/stagram.jpg" alt="Istagram"></a>
+        
+        <p>&copy; 2024 Alegria Kids. Todos os direitos reservados.</p>
+    </footer>
+  
+

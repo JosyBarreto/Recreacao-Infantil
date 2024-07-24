@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Contato - Alegria Kids</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo0101.jpg" alt="Logo Alegria Kids">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li> 
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cliente.html">Clientes</a></li>
+         
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Contato</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Data do Evento:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Observações:</label>
+                <textarea id="notes" name="notes"></textarea>
+                 <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+     
+    </main>
+
+    <footer>
+        <div class="social">
+           <a href="#"><img src="img/whatsapp.jpg" alt="Whatsapp"></a>
+           
+            <a href="#"><img src="img/icone face.jpg" alt="Facebook"></a>
+            <a href="#"><img src="img/stagram.jpg" alt="Istagram"></a>
+        
+        <p>&copy; 2024 Alegria Kids. Todos os direitos reservados.</p>
+    </footer>
+  <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const client = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                date: document.getElementById('date').value,
+                notes: document.getElementById('notes').value
+            };
+
+            let clients = JSON.parse(localStorage.getItem('clients')) || [];
+            clients.push(client);
+            localStorage.setItem('clients', JSON.stringify(clients));
+
+            alert('Cliente cadastrado com sucesso!');
+            window.location.href = 'cliente.html';
+        });
+    </script>
+</body>
+</html>
